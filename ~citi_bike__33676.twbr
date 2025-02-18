@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8' ?>
 
 <!-- build 20243.25.0114.1153                               -->
-<workbook original-version='18.1' source-build='2024.3.3 (20243.25.0114.1153)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+<workbook original-version='18.1' source-build='2024.3.3 (20243.25.0114.1153)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
     <AccessibleZoneTabOrder />
     <AnimationOnByDefault />
@@ -20,6 +20,7 @@
     <WindowsPersistSimpleIdentifiers />
     <WorksheetBackgroundTransparency />
   </document-format-change-manifest>
+  <repository-location id='citi_bike_story_17398497522060' path='/workbooks' revision='1.0' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
@@ -30,7 +31,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='december_bike' name='textscan.0aejxya05mmsw01azqcuo02ayruo (copy)'>
-            <connection class='textscan' directory='C:/Users/cmhil/Documents/citi_bike_challenge/Resources' filename='december_bike.csv' password='' server='' />
+            <connection class='textscan' directory='C:/Users/cmhil/Documents/citi_bike_challenge/Resources' filename='december_bike.csv' password='' server='' workgroup-auth-mode='as-is' />
           </named-connection>
         </named-connections>
         <relation name='Pivot' type='pivot'>
@@ -339,11 +340,8 @@
       <column caption='Trip Duration Min' datatype='real' name='[trip_duration_min]' role='measure' type='quantitative' />
       <column-instance column='[rideable_type]' derivation='None' name='[none:rideable_type:nk]' pivot='key' type='nominal' />
       <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
-        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/cmhil/OneDrive/Documents/My Tableau Repository/Datasources/december_bike (copy).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='02/18/2025 02:53:12 AM' username='tableau_internal_user'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/cmhil/OneDrive/Documents/My Tableau Repository/Datasources/december_bike (copy).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
           <relation name='Extract' table='[Extract].[Extract]' type='table' />
-          <refresh>
-            <refresh-event add-from-file-path='december_bike (copy)' increment-value='%null%' refresh-type='create' rows-inserted='109634' timestamp-start='2025-02-18 02:53:11.566' />
-          </refresh>
           <metadata-records>
             <metadata-record class='column'>
               <remote-name>ride_id</remote-name>
@@ -617,7 +615,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='june_bike' name='textscan.1mopeuq00vjeke1cn1goi110dfdp (copy)'>
-            <connection class='textscan' directory='C:/Users/cmhil/Documents/citi_bike_challenge/Resources' filename='june_bike (copy).csv' password='' server='' />
+            <connection class='textscan' directory='C:/Users/cmhil/Documents/citi_bike_challenge/Resources' filename='june_bike (copy).csv' password='' server='' workgroup-auth-mode='as-is' />
           </named-connection>
         </named-connections>
         <relation name='Pivot' type='pivot'>
@@ -932,11 +930,8 @@
       <column-instance column='[trip_distance_miles]' derivation='Sum' name='[sum:trip_distance_miles:qk]' pivot='key' type='quantitative' />
       <column-instance column='[trip_duration_min]' derivation='Sum' name='[sum:trip_duration_min:qk]' pivot='key' type='quantitative' />
       <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
-        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/cmhil/OneDrive/Documents/My Tableau Repository/Datasources/june_bike (copy).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='02/18/2025 02:50:13 AM' username='tableau_internal_user'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/cmhil/OneDrive/Documents/My Tableau Repository/Datasources/june_bike (copy).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
           <relation name='Extract' table='[Extract].[Extract]' type='table' />
-          <refresh>
-            <refresh-event add-from-file-path='june_bike (copy)' increment-value='%null%' refresh-type='create' rows-inserted='222122' timestamp-start='2025-02-18 02:50:11.708' />
-          </refresh>
           <metadata-records>
             <metadata-record class='column'>
               <remote-name>ride_id</remote-name>
@@ -951,7 +946,6 @@
               <approx-count>178987</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
-              <object-id>[june_bike.csv_2155A0FBC1144FF1A9DBC2455F82E900]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>rideable_type</remote-name>
@@ -966,7 +960,6 @@
               <approx-count>2</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
-              <object-id>[june_bike.csv_2155A0FBC1144FF1A9DBC2455F82E900]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>started_at</remote-name>
@@ -980,7 +973,6 @@
               <aggregation>Year</aggregation>
               <approx-count>178987</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[june_bike.csv_2155A0FBC1144FF1A9DBC2455F82E900]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>ended_at</remote-name>
@@ -994,7 +986,6 @@
               <aggregation>Year</aggregation>
               <approx-count>178987</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[june_bike.csv_2155A0FBC1144FF1A9DBC2455F82E900]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>start_station_id</remote-name>
@@ -1009,7 +1000,6 @@
               <approx-count>118</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
-              <object-id>[june_bike.csv_2155A0FBC1144FF1A9DBC2455F82E900]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>end_station_id</remote-name>
@@ -1024,7 +1014,6 @@
               <approx-count>184</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
-              <object-id>[june_bike.csv_2155A0FBC1144FF1A9DBC2455F82E900]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>start_lat</remote-name>
@@ -1038,7 +1027,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>19676</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[june_bike.csv_2155A0FBC1144FF1A9DBC2455F82E900]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>start_lng</remote-name>
@@ -1052,7 +1040,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>20366</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[june_bike.csv_2155A0FBC1144FF1A9DBC2455F82E900]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>end_lat</remote-name>
@@ -1066,7 +1053,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>220</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[june_bike.csv_2155A0FBC1144FF1A9DBC2455F82E900]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>end_lng</remote-name>
@@ -1080,7 +1066,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>220</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[june_bike.csv_2155A0FBC1144FF1A9DBC2455F82E900]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>member_casual</remote-name>
@@ -1095,7 +1080,6 @@
               <approx-count>2</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
-              <object-id>[june_bike.csv_2155A0FBC1144FF1A9DBC2455F82E900]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>trip_duration_min</remote-name>
@@ -1109,7 +1093,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>12390</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[june_bike.csv_2155A0FBC1144FF1A9DBC2455F82E900]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>trip_distance_miles</remote-name>
@@ -1123,7 +1106,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>948</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[june_bike.csv_2155A0FBC1144FF1A9DBC2455F82E900]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Pivot Field Names</remote-name>
@@ -1138,7 +1120,6 @@
               <approx-count>2</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='binary' />
-              <object-id>[june_bike.csv_2155A0FBC1144FF1A9DBC2455F82E900]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Pivot Field Values</remote-name>
@@ -1153,7 +1134,6 @@
               <approx-count>132</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='binary' />
-              <object-id>[june_bike.csv_2155A0FBC1144FF1A9DBC2455F82E900]</object-id>
             </metadata-record>
           </metadata-records>
         </connection>
@@ -1253,7 +1233,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='june_bike' name='textscan.1mopeuq00vjeke1cn1goi110dfdp'>
-            <connection class='textscan' directory='C:/Users/cmhil/Documents/citi_bike_challenge/Resources' filename='june_bike.csv' password='' server='' />
+            <connection class='textscan' directory='C:/Users/cmhil/Documents/citi_bike_challenge/Resources' filename='june_bike.csv' password='' server='' workgroup-auth-mode='as-is' />
           </named-connection>
         </named-connections>
         <relation connection='textscan.1mopeuq00vjeke1cn1goi110dfdp' name='june_bike.csv' table='[june_bike#csv]' type='table'>
@@ -1547,11 +1527,8 @@
       <column-instance column='[trip_distance_miles]' derivation='Sum' name='[sum:trip_distance_miles:qk]' pivot='key' type='quantitative' />
       <column-instance column='[trip_duration_min]' derivation='Sum' name='[sum:trip_duration_min:qk]' pivot='key' type='quantitative' />
       <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
-        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/cmhil/OneDrive/Documents/My Tableau Repository/Datasources/june_bike.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='02/18/2025 02:54:18 AM' username='tableau_internal_user'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/cmhil/OneDrive/Documents/My Tableau Repository/Datasources/june_bike.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
           <relation name='Extract' table='[Extract].[Extract]' type='table' />
-          <refresh>
-            <refresh-event add-from-file-path='june_bike' increment-value='%null%' refresh-type='create' rows-inserted='111061' timestamp-start='2025-02-18 02:54:17.326' />
-          </refresh>
           <metadata-records>
             <metadata-record class='column'>
               <remote-name>ride_id</remote-name>
@@ -1566,7 +1543,6 @@
               <approx-count>111061</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
-              <object-id>[june_bike.csv_2155A0FBC1144FF1A9DBC2455F82E900]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>rideable_type</remote-name>
@@ -1581,7 +1557,6 @@
               <approx-count>2</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
-              <object-id>[june_bike.csv_2155A0FBC1144FF1A9DBC2455F82E900]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>started_at</remote-name>
@@ -1595,7 +1570,6 @@
               <aggregation>Year</aggregation>
               <approx-count>111061</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[june_bike.csv_2155A0FBC1144FF1A9DBC2455F82E900]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>ended_at</remote-name>
@@ -1609,7 +1583,6 @@
               <aggregation>Year</aggregation>
               <approx-count>111061</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[june_bike.csv_2155A0FBC1144FF1A9DBC2455F82E900]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>start_station_name</remote-name>
@@ -1624,7 +1597,6 @@
               <approx-count>100</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
-              <object-id>[june_bike.csv_2155A0FBC1144FF1A9DBC2455F82E900]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>start_station_id</remote-name>
@@ -1639,7 +1611,6 @@
               <approx-count>100</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
-              <object-id>[june_bike.csv_2155A0FBC1144FF1A9DBC2455F82E900]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>end_station_name</remote-name>
@@ -1654,7 +1625,6 @@
               <approx-count>145</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
-              <object-id>[june_bike.csv_2155A0FBC1144FF1A9DBC2455F82E900]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>end_station_id</remote-name>
@@ -1669,7 +1639,6 @@
               <approx-count>145</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
-              <object-id>[june_bike.csv_2155A0FBC1144FF1A9DBC2455F82E900]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>start_lat</remote-name>
@@ -1683,7 +1652,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>11691</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[june_bike.csv_2155A0FBC1144FF1A9DBC2455F82E900]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>start_lng</remote-name>
@@ -1697,7 +1665,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>11691</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[june_bike.csv_2155A0FBC1144FF1A9DBC2455F82E900]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>end_lat</remote-name>
@@ -1711,7 +1678,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>145</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[june_bike.csv_2155A0FBC1144FF1A9DBC2455F82E900]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>end_lng</remote-name>
@@ -1725,7 +1691,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>145</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[june_bike.csv_2155A0FBC1144FF1A9DBC2455F82E900]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>member_casual</remote-name>
@@ -1740,7 +1705,6 @@
               <approx-count>2</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
-              <object-id>[june_bike.csv_2155A0FBC1144FF1A9DBC2455F82E900]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>trip_duration_min</remote-name>
@@ -1754,7 +1718,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>7240</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[june_bike.csv_2155A0FBC1144FF1A9DBC2455F82E900]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>trip_distance_miles</remote-name>
@@ -1768,7 +1731,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>558</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[june_bike.csv_2155A0FBC1144FF1A9DBC2455F82E900]</object-id>
             </metadata-record>
           </metadata-records>
         </connection>
@@ -1796,20 +1758,20 @@
               <bucket>&quot;[federated.1ieb8vt185dz531a7kc161dxj9kd].[sum:trip_duration_min:qk]&quot;</bucket>
             </map>
           </encoding>
-          <encoding attr='color' field='[none:rideable_type:nk]' type='palette'>
-            <map to='#2ca02c'>
-              <bucket>&quot;electric_bike&quot;</bucket>
-            </map>
-            <map to='#9467bd'>
-              <bucket>&quot;classic_bike&quot;</bucket>
-            </map>
-          </encoding>
           <encoding attr='color' field='[none:member_casual:nk]' type='palette'>
             <map to='#1f77b4'>
               <bucket>&quot;casual&quot;</bucket>
             </map>
             <map to='#ff7f0e'>
               <bucket>&quot;member&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:rideable_type:nk]' type='palette'>
+            <map to='#2ca02c'>
+              <bucket>&quot;electric_bike&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;classic_bike&quot;</bucket>
             </map>
           </encoding>
         </style-rule>
@@ -1852,7 +1814,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='december_bike' name='textscan.0aejxya05mmsw01azqcuo02ayruo'>
-            <connection class='textscan' directory='C:/Users/cmhil/Documents/citi_bike_challenge/Resources' filename='december_bike.csv' password='' server='' />
+            <connection class='textscan' directory='C:/Users/cmhil/Documents/citi_bike_challenge/Resources' filename='december_bike.csv' password='' server='' workgroup-auth-mode='as-is' />
           </named-connection>
         </named-connections>
         <relation connection='textscan.0aejxya05mmsw01azqcuo02ayruo' name='december_bike.csv' table='[december_bike#csv]' type='table'>
@@ -2137,11 +2099,8 @@
       <column caption='Trip Duration Min' datatype='real' name='[trip_duration_min]' role='measure' type='quantitative' />
       <column-instance column='[rideable_type]' derivation='None' name='[none:rideable_type:nk]' pivot='key' type='nominal' />
       <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
-        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/cmhil/OneDrive/Documents/My Tableau Repository/Datasources/december_bike.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='02/18/2025 02:54:38 AM' username='tableau_internal_user'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/cmhil/OneDrive/Documents/My Tableau Repository/Datasources/december_bike.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
           <relation name='Extract' table='[Extract].[Extract]' type='table' />
-          <refresh>
-            <refresh-event add-from-file-path='december_bike' increment-value='%null%' refresh-type='create' rows-inserted='54817' timestamp-start='2025-02-18 02:54:37.445' />
-          </refresh>
           <metadata-records>
             <metadata-record class='column'>
               <remote-name>ride_id</remote-name>
@@ -2156,7 +2115,6 @@
               <approx-count>54817</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
-              <object-id>[december_bike.csv_39B9FBA006EA40CC82C093C82F1EA4E9]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>rideable_type</remote-name>
@@ -2171,7 +2129,6 @@
               <approx-count>2</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
-              <object-id>[december_bike.csv_39B9FBA006EA40CC82C093C82F1EA4E9]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>started_at</remote-name>
@@ -2185,7 +2142,6 @@
               <aggregation>Year</aggregation>
               <approx-count>54817</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[december_bike.csv_39B9FBA006EA40CC82C093C82F1EA4E9]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>ended_at</remote-name>
@@ -2199,7 +2155,6 @@
               <aggregation>Year</aggregation>
               <approx-count>54817</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[december_bike.csv_39B9FBA006EA40CC82C093C82F1EA4E9]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>start_station_name</remote-name>
@@ -2214,7 +2169,6 @@
               <approx-count>94</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
-              <object-id>[december_bike.csv_39B9FBA006EA40CC82C093C82F1EA4E9]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>start_station_id</remote-name>
@@ -2229,7 +2183,6 @@
               <approx-count>94</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
-              <object-id>[december_bike.csv_39B9FBA006EA40CC82C093C82F1EA4E9]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>end_station_name</remote-name>
@@ -2244,7 +2197,6 @@
               <approx-count>126</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
-              <object-id>[december_bike.csv_39B9FBA006EA40CC82C093C82F1EA4E9]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>end_station_id</remote-name>
@@ -2259,7 +2211,6 @@
               <approx-count>126</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
-              <object-id>[december_bike.csv_39B9FBA006EA40CC82C093C82F1EA4E9]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>start_lat</remote-name>
@@ -2273,7 +2224,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>94</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[december_bike.csv_39B9FBA006EA40CC82C093C82F1EA4E9]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>start_lng</remote-name>
@@ -2287,7 +2237,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>94</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[december_bike.csv_39B9FBA006EA40CC82C093C82F1EA4E9]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>end_lat</remote-name>
@@ -2301,7 +2250,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>126</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[december_bike.csv_39B9FBA006EA40CC82C093C82F1EA4E9]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>end_lng</remote-name>
@@ -2315,7 +2263,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>126</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[december_bike.csv_39B9FBA006EA40CC82C093C82F1EA4E9]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>member_casual</remote-name>
@@ -2330,7 +2277,6 @@
               <approx-count>2</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
-              <object-id>[december_bike.csv_39B9FBA006EA40CC82C093C82F1EA4E9]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>trip_duration_min</remote-name>
@@ -2344,7 +2290,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>3572</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[december_bike.csv_39B9FBA006EA40CC82C093C82F1EA4E9]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>trip_distance_miles</remote-name>
@@ -2358,7 +2303,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>450</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[december_bike.csv_39B9FBA006EA40CC82C093C82F1EA4E9]</object-id>
             </metadata-record>
           </metadata-records>
         </connection>
@@ -3552,21 +3496,10 @@
             <column-instance column='[Calculation_2090514700289150995]' derivation='None' name='[none:Calculation_2090514700289150995:qk]' pivot='key' type='quantitative' />
             <column-instance column='[Calculation_2090514700289253396]' derivation='None' name='[none:Calculation_2090514700289253396:qk]' pivot='key' type='quantitative' />
             <column-instance column='[Pivot Field Values]' derivation='None' name='[none:Pivot Field Values:nk]' pivot='key' type='nominal' />
-            <column-instance column='[rideable_type]' derivation='None' name='[none:rideable_type:nk]' pivot='key' type='nominal' />
-            <column caption='Rideable Type' datatype='string' name='[rideable_type]' role='dimension' type='nominal' />
             <column aggregation='Avg' caption='Start Lat' datatype='real' name='[start_lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
             <column aggregation='Avg' caption='Start Lng' datatype='real' name='[start_lng]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
             <column-instance column='[Calculation_2090514700287553554]' derivation='Sum' name='[sum:Calculation_2090514700287553554:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
-          <filter class='categorical' column='[federated.1ieb8vt185dz531a7kc161dxj9kd (copy)].[none:rideable_type:nk]'>
-            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
-              <groupfilter function='member' level='[none:rideable_type:nk]' member='&quot;classic_bike&quot;' />
-              <groupfilter function='member' level='[none:rideable_type:nk]' member='&quot;electric_bike&quot;' />
-            </groupfilter>
-          </filter>
-          <slices>
-            <column>[federated.1ieb8vt185dz531a7kc161dxj9kd (copy)].[none:rideable_type:nk]</column>
-          </slices>
           <aggregation value='true' />
         </view>
         <style>
@@ -3853,8 +3786,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='51' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='84000' id='50' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+            <zone h='100000' id='57' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='56' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
                 <zone fixed-size='280' h='98000' id='9' is-fixed='true' name='(June) Casual vs Member Rides' w='49200' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -3933,8 +3866,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='29' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='84000' id='28' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+            <zone h='100000' id='35' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='34' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
                 <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='(June) Miles Biked' w='41200' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -4022,8 +3955,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='29' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='84000' id='28' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+            <zone h='100000' id='35' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='34' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
                 <zone fixed-size='280' h='98000' id='9' is-fixed='true' name='(June) Minutes Biked' w='41200' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -4121,8 +4054,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1250' minheight='1250' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='57' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='84000' id='56' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+            <zone h='100000' id='63' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='62' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
                 <zone fixed-size='280' h='49000' id='5' is-fixed='true' name='(June) E-Bike vs Pedal' w='47600' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -4201,7 +4134,7 @@
             <zone h='2801' id='3' type-v2='title' w='98426' x='787' y='830' />
             <zone fixed-size='120' h='12448' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='3631' />
             <zone h='83091' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='16079'>
-              <flipboard active-id='2' nav-type='caption' show-nav-arrows='true'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
                 <story-points>
                   <story-point caption='Our e-bikes are more popular than pedal bikes and with lower volume in December we see that they make up a &gt; ride share. Peak hours mirror standard business hours with peaks at 8 am and 5 pm with only pedal bikes having an evening peak of 6 pm.' captured-sheet='E-Bike vs Pedal Comparison' id='1' />
                   <story-point caption='Our top 10 stations for June and December are very similar with our top 2 arrival and departure stations being the same. 7 out of 10 stations make the top 10 in both months.' captured-sheet='Top 10 Stations' id='2' />
@@ -4217,7 +4150,15 @@
                       </worksheet>
                     </capturedDeltas>
                   </story-point>
-                  <story-point caption='Who is riding bike in the Winter? Our members, as total ridership was down 50.64% however just as in June our activity hot spots mirror each other. ' captured-sheet='December Map' id='4' />
+                  <story-point caption='Who is riding bike in the Winter? Our members, as total ridership was down 50.64% however just as in June our activity hot spots mirror each other. ' captured-sheet='December Map' id='4'>
+                    <capturedDeltas>
+                      <worksheet name='December Map'>
+                        <filter class='categorical' column='[federated.00s7g9j0nm2f1g19vua0f14do5y6 (copy)].[dy:started_at:ok]'>
+                          <groupfilter function='level-members' level='[dy:started_at:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
                   <story-point caption='Membership riders made up 70.81% in June and 82.42% in December of all rides. Our Casual ride share dropped 70.26% from June to December which is reasonable given the transportation alternative heavy usatge of the program as warmer temps lead people outdoors more. ' captured-sheet='Casual vs Member Rides Comparison' id='5' />
                   <story-point caption='As with Members making up the marjority of our riders by more than 2 to 1 in each month, they also make up the majority of the miles ridden. ' captured-sheet='Casual vs Members Mileage' id='6' />
                   <story-point caption='The most interesting finding for each month is that Casual riders ride less however when they ride, they have longer average rides with a ride in June being longer than 20 minutes and in December more than 10 minutes. They also rode for almost the same amount of time in June as our members.' captured-sheet='Casual vs Members Time' id='7' />
@@ -4285,8 +4226,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='750' minheight='750' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='44' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='84000' id='43' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+            <zone h='100000' id='50' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='49' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
                 <zone fixed-size='280' h='48999' id='15' is-fixed='true' name='(June) Top 10 Stations' w='79300' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -4338,7 +4279,7 @@
     </dashboard>
   </dashboards>
   <windows source-height='93'>
-    <window class='worksheet' maximized='true' name='June Map'>
+    <window class='worksheet' name='June Map'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -4622,6 +4563,11 @@
       </cards>
       <simple-id uuid='{0CE7F7CA-92EF-4446-BFC1-05680674D3BE}' />
     </window>
+    <window class='dashboard' maximized='true' name='Story 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{453A7A7B-911C-40DE-BCDD-AB50A5B42FF0}' />
+    </window>
     <window class='worksheet' name='(December) E-Bike vs Pedal'>
       <cards>
         <edge name='left'>
@@ -4769,11 +4715,6 @@
       </viewpoints>
       <active id='-1' />
       <simple-id uuid='{1E69E0E4-A7D0-42C1-8D58-500A841917DF}' />
-    </window>
-    <window class='dashboard' name='Story 1'>
-      <viewpoints />
-      <active id='-1' />
-      <simple-id uuid='{453A7A7B-911C-40DE-BCDD-AB50A5B42FF0}' />
     </window>
     <window class='dashboard' name='Casual vs Members Mileage'>
       <viewpoints>

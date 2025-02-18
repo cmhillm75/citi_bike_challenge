@@ -9,6 +9,7 @@ I used jupyter notebook, created 2 DataFrames and added 2 columns of information
 
 [Citi Bike page](https://citibikenyc.com/system-data)
 
+[citi_bike_story](https://public.tableau.com/views/citi_bike_story_17398497522060/Story1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 ## June Findings
 
 Members vs. Casual Riders (June Data):
